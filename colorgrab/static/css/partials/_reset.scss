@@ -1,29 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
-.__red {
-  color: #ff5050;
-}
-
-.__blue {
-  color: #5bc1ec;
-}
-
-.__yellow {
-  color: #fff06a;
-}
-
-.__green {
-  color: #6fe289;
-}
-
-.__pink {
-  color: #ffa4f6;
-}
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
+
 html,
 body,
 div,
@@ -112,7 +91,6 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -127,21 +105,17 @@ nav,
 section {
   display: block;
 }
-
 body {
   line-height: 1;
 }
-
 ol,
 ul {
   list-style: none;
 }
-
 blockquote,
 q {
   quotes: none;
 }
-
 blockquote:before,
 blockquote:after,
 q:before,
@@ -149,47 +123,7 @@ q:after {
   content: "";
   content: none;
 }
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Nunito", sans-serif;
-  background: #1b2226;
-  color: #f3f3f3;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-h1 {
-  font-size: 6.4rem;
-}
-
-h2 {
-  font-size: 4.8rem;
-}
-
-h3 {
-  font-size: 3.6rem;
-}
-
-h4 {
-  font-size: 2.8rem;
-}
-
-h5 {
-  font-size: 2rem;
-}/*# sourceMappingURL=style.css.map */
