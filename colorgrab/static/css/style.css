@@ -192,4 +192,44 @@ h4 {
 
 h5 {
   font-size: 2rem;
+}
+
+.main-logo {
+  display: inline-block;
+  padding: 3rem 0;
+  text-decoration: none;
+  color: #f3f3f3;
+}
+.main-logo:hover, .main-logo:focus {
+  color: #f3f3f3;
+}
+
+.author {
+  padding: 3rem 0;
+  font-size: 1.6rem;
+}
+.author-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f3f3f3;
+  text-decoration: none;
+  position: relative;
+}
+.author-name::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  transition: all 0.4s ease;
+  background: linear-gradient(to right, #ff5050, #5bc1ec, #fff06a, #6fe289, #ffa4f6);
+}
+.author-name:hover, .author-name:focus {
+  color: #f3f3f3;
+}
+.author-name:hover::after, .author-name:focus::after {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

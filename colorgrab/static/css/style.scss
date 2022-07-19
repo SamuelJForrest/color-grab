@@ -1,17 +1,18 @@
 // imports
 @import "partials/config";
+@import "partials/mixins";
 @import "partials/modifiers";
 @import "partials/reset";
 
 // styles
 html {
-  font-size: 62.5%;
+	font-size: 62.5%;
 }
 
 body {
-  font-family: $font-family;
-  background: $color-dark;
-  color: $color-light;
+	font-family: $font-family;
+	background: $color-dark;
+	color: $color-light;
 }
 
 // headings
@@ -20,26 +21,80 @@ h2,
 h3,
 h4,
 h5 {
-  font-weight: 700;
-  text-transform: uppercase;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 h1 {
-  font-size: 6.4rem;
+	font-size: 6.4rem;
 }
 
 h2 {
-  font-size: 4.8rem;
+	font-size: 4.8rem;
 }
 
 h3 {
-  font-size: 3.6rem;
+	font-size: 3.6rem;
 }
 
 h4 {
-  font-size: 2.8rem;
+	font-size: 2.8rem;
 }
 
 h5 {
-  font-size: 2rem;
+	font-size: 2rem;
+}
+
+.main-logo {
+	display: inline-block;
+	padding: 3rem 0;
+	text-decoration: none;
+	color: $color-light;
+
+	&:hover,
+	&:focus {
+		color: $color-light;
+	}
+}
+
+.author {
+	padding: 3rem 0;
+	font-size: 1.6rem;
+
+	&-name {
+		font-size: 2rem;
+		font-weight: 700;
+		color: $color-light;
+		text-decoration: none;
+		position: relative;
+
+		&::after {
+			content: "";
+			display: inline-block;
+			width: 0;
+			height: 2px;
+			position: absolute;
+			bottom: -1px;
+			left: 0;
+			right: 0;
+			transition: all 0.4s ease;
+			background: linear-gradient(
+				to right,
+				$color-red,
+				$color-blue,
+				$color-yellow,
+				$color-green,
+				$color-pink
+			);
+		}
+
+		&:hover,
+		&:focus {
+			color: $color-light;
+
+			&::after {
+				width: 100%;
+			}
+		}
+	}
 }
