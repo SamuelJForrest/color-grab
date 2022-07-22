@@ -1,0 +1,57 @@
+@mixin setBtnColor($color) {
+	background-size: 0 100%;
+	background-image: linear-gradient(to right, $color, $color);
+	background-repeat: no-repeat;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-image: linear-gradient(to left, $color, $color);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+}
+
+.button {
+	background-color: $color-light;
+	padding: 1.25rem 2rem;
+	font-size: 1.6rem;
+	color: $color-dark;
+	border: none;
+	outline: none;
+	font-weight: 700;
+	box-shadow: inset 0 0 0 0 $color-light;
+	transition: all 0.5s;
+
+	&:hover {
+		cursor: pointer;
+		transition: all 0.5s;
+	}
+
+	&.__red {
+		@include setBtnColor($color-red);
+	}
+
+	&.__blue {
+		@include setBtnColor($color-blue);
+	}
+
+	&.__yellow {
+		@include setBtnColor($color-yellow);
+	}
+
+	&.__green {
+		@include setBtnColor($color-green);
+	}
+
+	&.__pink {
+		@include setBtnColor($color-pink);
+	}
+}
+
+.submit-button-wrap {
+	position: absolute;
+	right: -1.8rem;
+	bottom: -6.7rem;
+	padding: 1rem;
+}

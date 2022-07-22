@@ -3,6 +3,7 @@
 @import "partials/mixins";
 @import "partials/modifiers";
 @import "partials/reset";
+@import "partials/button";
 
 // styles
 html {
@@ -95,6 +96,39 @@ h5 {
 			&::after {
 				width: 100%;
 			}
+		}
+	}
+}
+
+// homepage
+.home {
+	padding: 3rem 0 9rem 0;
+
+	@media screen and (min-width: $lg) {
+		padding: 5rem 0 15rem 0;
+		font-weight: 700;
+	}
+
+	&-text {
+		font-size: 2rem;
+		margin-bottom: 1.6rem;
+	}
+
+	&-form {
+		padding: 8rem 0;
+		border: 0.8rem solid $color-light;
+		border-radius: 4px;
+		position: relative;
+
+		&-icon {
+			font-size: 8rem;
+			margin-bottom: 2rem;
+		}
+
+		&-text {
+			font-weight: 700;
+			font-size: 2rem;
+			margin-bottom: 2rem;
 		}
 	}
 }

@@ -1,5 +1,45 @@
 {% extends "base.html" %} {% block content %}
-<div class="col-12">
-  <p>This is a test parahraph</p>
+<div class="home">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 text-center">
+				<p class="home-text">
+					Upload an image to generate your colour palette
+				</p>
+			</div>
+			<!-- col -->
+			<div class="col-lg-8 mx-lg-auto text-center">
+				<div class="home-form">
+					<form action="">
+						<i
+							class="fa-solid fa-arrow-up-from-bracket home-form-icon"
+						></i>
+						<p class="home-form-text">
+							Browse for a file, or drag it here.
+						</p>
+						<div class="home-form-input-wrap">
+							<label class="button" for="pictureupload"
+								>Browse</label
+							>
+							<input
+								class="home-form-input"
+								type="file"
+								name="pictureupload"
+								id="pictureupload"
+								hidden
+							/>
+						</div>
+						<div class="submit-button-wrap">
+							<button class="button" type="submit">
+								Generate palette
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- row -->
+	</div>
+	<!-- container -->
 </div>
 {% endblock %}
