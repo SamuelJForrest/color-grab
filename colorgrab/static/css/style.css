@@ -165,9 +165,12 @@ table {
   font-weight: 700;
   box-shadow: inset 0 0 0 0 #f3f3f3;
   transition: all 0.5s;
+  text-decoration: none;
+  display: inline-block;
 }
 .button:hover {
   cursor: pointer;
+  color: #1b2226;
   transition: all 0.5s;
 }
 .button.__red {
@@ -219,6 +222,11 @@ table {
   background-image: linear-gradient(to left, #ffa4f6, #ffa4f6);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+
+.button-wrap {
+  display: inline-block;
+  padding: 2rem;
 }
 
 .submit-button-wrap {
@@ -321,7 +329,7 @@ h5 {
   margin-bottom: 1.6rem;
 }
 .home-form {
-  padding: 8rem 0;
+  padding: 6rem 0;
   border: 0.8rem solid #f3f3f3;
   border-radius: 4px;
   position: relative;
@@ -334,4 +342,18 @@ h5 {
   font-weight: 700;
   font-size: 2rem;
   margin-bottom: 2rem;
+}
+
+.pagenotfound {
+  padding: 3rem 0 9rem 0;
+}
+@media screen and (min-width: 992px) {
+  .pagenotfound {
+    padding: 5rem 0 15rem 0;
+    font-weight: 700;
+  }
+}
+.pagenotfound-title {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
 }/*# sourceMappingURL=style.css.map */

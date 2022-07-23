@@ -115,7 +115,7 @@ h5 {
 	}
 
 	&-form {
-		padding: 8rem 0;
+		padding: 6rem 0;
 		border: 0.8rem solid $color-light;
 		border-radius: 4px;
 		position: relative;
@@ -130,5 +130,20 @@ h5 {
 			font-size: 2rem;
 			margin-bottom: 2rem;
 		}
+	}
+}
+
+// 404 page
+.pagenotfound {
+	padding: 3rem 0 9rem 0;
+
+	@media screen and (min-width: $lg) {
+		padding: 5rem 0 15rem 0;
+		font-weight: 700;
+	}
+
+	&-title {
+		font-size: 4rem;
+		margin-bottom: 0.5rem;
 	}
 }

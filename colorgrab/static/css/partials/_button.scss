@@ -22,9 +22,12 @@
 	font-weight: 700;
 	box-shadow: inset 0 0 0 0 $color-light;
 	transition: all 0.5s;
+	text-decoration: none;
+	display: inline-block;
 
 	&:hover {
 		cursor: pointer;
+		color: $color-dark;
 		transition: all 0.5s;
 	}
 
@@ -47,6 +50,11 @@
 	&.__pink {
 		@include setBtnColor($color-pink);
 	}
+}
+
+.button-wrap {
+	display: inline-block;
+	padding: 2rem;
 }
 
 .submit-button-wrap {
