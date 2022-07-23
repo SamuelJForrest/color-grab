@@ -133,8 +133,9 @@ h5 {
 	}
 }
 
-// 404 page
-.pagenotfound {
+// 404 + 500 pages
+.pagenotfound,
+.servererror {
 	padding: 3rem 0 9rem 0;
 
 	@media screen and (min-width: $lg) {

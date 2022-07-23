@@ -23,3 +23,11 @@ def page_not_found(e):
     Renders 404 page
     """
     return render_template("pages/404.html"), 404
+
+
+@app.errorhandler(500)
+def server_error(e):
+    """
+    Renders 500 page
+    """
+    return render_template("pages/500.html"), 500

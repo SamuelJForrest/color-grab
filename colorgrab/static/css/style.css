@@ -344,16 +344,19 @@ h5 {
   margin-bottom: 2rem;
 }
 
-.pagenotfound {
+.pagenotfound,
+.servererror {
   padding: 3rem 0 9rem 0;
 }
 @media screen and (min-width: 992px) {
-  .pagenotfound {
+  .pagenotfound,
+.servererror {
     padding: 5rem 0 15rem 0;
     font-weight: 700;
   }
 }
-.pagenotfound-title {
+.pagenotfound-title,
+.servererror-title {
   font-size: 4rem;
   margin-bottom: 0.5rem;
 }/*# sourceMappingURL=style.css.map */
